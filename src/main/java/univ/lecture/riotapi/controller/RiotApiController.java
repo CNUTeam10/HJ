@@ -55,6 +55,7 @@ public class RiotApiController {
         String queriedInput = (String)equationDetail.get("input");
         Equation equation = new Equation(queriedInput);
         
-        return summoner;
+        //return summoner;
+        return equation;
     }
 }

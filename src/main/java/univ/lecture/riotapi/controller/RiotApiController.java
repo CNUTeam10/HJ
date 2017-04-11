@@ -18,7 +18,7 @@ import java.util.Map;
  * Created by tchi on 2017. 4. 1..
  */
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/calc")
 @Log4j
 public class RiotApiController {
     @Autowired

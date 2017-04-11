@@ -24,7 +24,7 @@ public class RiotApiController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping(value = "/summoner/{name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @RequestMapping(value = "/summoner/{name}", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Summoner querySummoner(@PathVariable("name") String summonerName) throws UnsupportedEncodingException {
         final String url = "https://kr.api.pvp.net/api/lol/kr/v1.4/summoner/by-name/" +
                 summonerName +

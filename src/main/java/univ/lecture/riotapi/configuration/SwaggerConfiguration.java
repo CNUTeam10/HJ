@@ -26,10 +26,10 @@ import static springfox.documentation.builders.PathSelectors.regex;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfiguration {
-    @Value("${RPNcalcurator.title}")
+    @Value("${application.title}")
     private String applicationTitle;
 
-    @Value("${RPNcalcurator.description}")
+    @Value("${application.description}")
     private String applicationDescription;
 
     @Value("${swagger.enabled}")

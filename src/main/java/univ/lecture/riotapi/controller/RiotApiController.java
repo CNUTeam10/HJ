@@ -52,8 +52,10 @@ public class RiotApiController {
 //        Summoner summoner = new Summoner(queriedName, queriedLevel);
         
         Map<String, Object> equationDetail = (Map<String, Object>) parsedMap.values().toArray()[0];
-        String queriedInput = (String)equationDetail.get("input");
-        Equation equation = new Equation(queriedInput);
+        double queriedresult = (double)equationDetail.get("result");
+        long queriednow = (long)equationDetail.get("now");
+        int queriedteamID = (int)equationDetail.get("teamID");
+        Equation equation = new Equation(queriedResult, queriedNow, queriedTeamID);
         
         //return summoner;
         return equation;
